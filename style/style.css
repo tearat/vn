@@ -1,0 +1,55 @@
+body {
+    background-color: black;
+    @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400');
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#game {
+    margin: 0 auto;
+    width: 800px;
+    height: 600px;
+    background-color: #ccc;
+    border-bottom: 20px solid black;
+}
+
+#game img {
+    transition: 0.5s ease;
+}
+
+#panel {
+    margin: 0 auto;
+    width: 800px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background-color: #999;
+}
+
+#panel button {
+    width: 50%;
+    height: 50px;
+    padding: 10px;
+    background-color: crimson;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.25s ease;
+}
+#panel button:hover {
+    background-color: orange;
+}
+
+#panel p {
+    cursor: pointer;
+    background-color: #ccc;
+    font-size: 20px;
+    height: 110px;
+    flex: auto;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    margin: 10px;
+    vertical-align: top;
+}
