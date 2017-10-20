@@ -1,4 +1,6 @@
 body {
+    margin: 0;
+    padding: 0;
     background-color: black;
     @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400');
     font-family: 'Roboto Condensed', sans-serif;
@@ -14,6 +16,20 @@ body {
 
 #game img {
     transition: 0.5s ease;
+}
+
+#game #sprite_1 {
+    position: absolute;
+    top: 0px;
+}
+
+#game #sprite_2 {
+    position: absolute;
+    top: 0px;
+/*
+    position: relative;
+    top: -604px;
+*/
 }
 
 #panel {
@@ -37,6 +53,11 @@ body {
     font-size: 20px;
     transition: 0.25s ease;
 }
+
+#panel button:disabled {
+    background-color: #555;
+}
+
 #panel button:hover {
     background-color: orange;
 }
@@ -49,7 +70,6 @@ body {
     flex: auto;
     width: 100%;
     margin: 0;
-    padding: 10px;
-    margin: 10px;
+    padding: 20px;
     vertical-align: top;
 }
