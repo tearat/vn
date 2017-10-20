@@ -17,7 +17,7 @@ function render(dialog_pos)
     
     // checking existence
     try { texts[dialog_pos].name }
-    catch (err) { dialog.innerHTML = "// null"; clearTimeout(rendering);  }
+    catch (err) { dialog.innerHTML = "// null"; controls(true);  }
 
     // rendering NAME
     dialog.innerHTML += "<strong>" + texts[dialog_pos].name + ": </strong>";
@@ -31,7 +31,7 @@ function render(dialog_pos)
         if ( i == texts[dialog_pos].text.length ) 
         {
             clearTimeout(rendering); 
-            controls(true)
+            controls(true);
         }
     },10);
 
