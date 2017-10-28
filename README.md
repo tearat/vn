@@ -13,3 +13,7 @@ visual novel powered by fucking javascript
 - done with second picture and its parameters;
 - done with absolute pic positions;
 - done with disabling buttons and keydowns while text rendering;
+
+# 28.10.2017
+
+- testing the ungit
